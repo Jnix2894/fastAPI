@@ -11,7 +11,6 @@ class Question(Base):
     content = Column(Text, nullable=False)
     create_date = Column(DateTime, nullable=False)
 
-
 class Answer(Base):
     __tablename__ = "answer"
 
@@ -20,3 +19,4 @@ class Answer(Base):
     create_date = Column(DateTime, nullable=False)
     question_id = Column(Integer, ForeignKey("question.id"))
     question = relationship("Question", backref="answers")
+
