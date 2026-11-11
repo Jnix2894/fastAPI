@@ -7,8 +7,8 @@
 
     const routes = { 
         '/': Home,
-        '/detail/:question_id': Detail,
-        '/question-create' : QuestionCreate,
+        '/detail/:question_id': Detail, 
+        '/question-create': QuestionCreate,
     }
 </script>
 
